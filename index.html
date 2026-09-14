@@ -1,0 +1,355 @@
+<html>
+	<head>
+		<title>Amber Miura Counseling | Individual Therapy | Parker, CO </title>
+		<meta name="description" content="Amber Miura Counseling focuses on individual counseling and specializes in postpartum depression, anxiety, and trauma." />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+
+			/* Header solid at top, fades on scroll, reappears on hover */
+			#header {
+				background-color: #ffffff;
+				transition: opacity 0.4s ease, background-color 0.4s ease;
+				opacity: 1;
+				height: 150px;
+				line-height: normal;
+				display: grid !important;
+				grid-template-columns: 1fr 1fr 1fr;
+				align-items: center;
+				padding: 0 2em;
+			}
+
+			#header.hide {
+				opacity: 0;
+				pointer-events: none;
+			}
+
+			#header.hide:hover {
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			/* Header logo */
+			#header h1 {
+				margin: 0;
+				padding: 0;
+				justify-self: start;
+			}
+
+			#header h1 img {
+				height: 150px;
+				width: auto;
+				display: block;
+			}
+
+			/* Header center email button */
+			#header .header-email {
+				text-align: center;
+				justify-self: center;
+			}
+
+			/* Header nav */
+			#header nav {
+				justify-self: end;
+				text-align: right;
+				display: flex;
+				align-items: center;
+				gap: 16px;
+			}
+
+			#header nav .header-nav-info {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				gap: 1px;
+				line-height: 1.2;
+			}
+
+			#header nav .header-nav-text {
+				font-size: 0.85em;
+				color: #2e3141;
+				font-weight: bold;
+				letter-spacing: 0.05em;
+				white-space: nowrap;
+			}
+
+			#header nav .header-phone {
+				font-size: 1.4em;
+				color: #2e3141 !important;
+				text-decoration: none;
+				white-space: nowrap;
+				display: flex;
+				align-items: center;
+				gap: 6px;
+				transition: color 0.2s ease;
+				justify-content: flex-start;
+				text-align: left;
+			}
+
+			#header nav .header-phone:hover {
+				color: #ff66c4 !important;
+			}
+
+			#header nav .header-phone .icon {
+				font-size: 0.9em;
+				border: none;
+				padding: 0;
+			}
+
+			#header .header-email a {
+				display: inline-block;
+				background-color: #2e3141;
+				color: #ffffff !important;
+				padding: 0.6em 1.6em;
+				border-radius: 4px;
+				text-decoration: none;
+				font-size: 0.85em;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				font-weight: bold;
+				border: 2px solid #2e3141;
+				transition: background-color 0.2s ease, color 0.2s ease;
+				line-height: normal;
+			}
+
+			#header .header-email a:hover {
+				background-color: #ffffff;
+				color: #2e3141 !important;
+			}
+
+
+
+			/* Menu box position */
+			#menu {
+				top: 150px;
+			}
+
+			/* Section One text container */
+			#one .content {
+				background-color: #ffffff;
+				border: 2px solid #dddddd;
+				box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.15);
+				padding: .5em;
+				border-radius: 12px;
+				color: #333333;
+			}
+
+			#one .content h2,
+			#one .content p,
+			#one .content a {
+				color: #333333;
+			}
+
+			/* Section One square image with shadow */
+			#one .image {
+				border-radius: 0 !important;
+				overflow: visible !important;
+			}
+
+			#one .image img {
+				width: 400px;
+				height: 500px;
+				object-fit: cover;
+				object-position: center;
+				border-radius: 0 !important;
+				box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.6);
+			}
+
+			/* Straight edges on Section Three only */
+			#three.wrapper::before,
+			#three.wrapper::after {
+				display: none !important;
+			}
+
+			/* Adjust height of Section Three */
+			#three.wrapper {
+				min-height: 600px;
+				background-image: url('images/Section_3.jpg');
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
+				background-color: transparent;
+			}
+
+			/* Straight bottom edge on Section Two */
+			#two.wrapper::after {
+				display: none !important;
+				height: 0 !important;
+			}
+
+			/* Remove gap between Section Two and Three */
+			#two.wrapper {
+				padding-bottom: 0;
+				margin-bottom: 0 !important;
+			}
+
+			#three.wrapper {
+				padding-top: 0;
+				margin-top: 0 !important;
+			}
+
+			/* Straight edges on Section Four */
+			#four.wrapper::before,
+			#four.wrapper::after {
+				display: none !important;
+				height: 0 !important;
+			}
+
+			#four.wrapper {
+				margin-top: 0 !important;
+				margin-bottom: 0 !important;
+				padding-top: 0;
+			}
+
+			/* Remove gap between Section Three and Four */
+			#three.wrapper {
+				margin-bottom: 0 !important;
+				padding-bottom: 0;
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html"><img src="images/AMC Logo.png" alt="Amber Miura Counseling" /></a></h1>
+						<div class="header-email">
+							<a href="mailto:amber@ambermiuracounseling.com?subject=Initial%20Consultation">Email Me</a>
+						</div>
+						<nav>
+							<div class="header-nav-info">
+								<span class="header-nav-text">Amber Miura Counseling LLC</span>
+								<a href="tel:17208770650" class="header-phone">
+									<i class="icon solid fa-phone"></i> (720) 877-0650
+								</a>
+							</div>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html">Meet Amber</a></li>
+								<li><a href="index.html">Services</a></li>
+								<li><a href="index.html">FAQ</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>THERAPY TAILORED FOR YOU</h2>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Welcome</h2>
+										<p>Accepting virtual tele-therapy clients through a secured video platform.</p>
+										<p>Individual therapy specializing in anxiety, depression, ADHD, women's issues such as maternal mental health, infertility, pregnancy, and postpartum. Additionally, I specialize in working with clients around issues connected to faith &amp; spirituality.</p>
+										<a href="mailto:amber@ambermiuracounseling.com?subject=Initial%20Consultation" class="special">GET STARTED NOW</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">About Amber Miura Counseling</h2>
+										<p>Welcome to Amber Miura Counseling. I am so glad you are here. It is such a brave step to reach out for help. I look forward to hearing your story. I believe counseling is a sacred space shared between the therapist and client. When you sit with me it is a comfortable, non-judgmental, and empathetic environment for clients to be their most authentic selves so they can begin to grow, change, and heal. I believe in the holistic well-being of each client, addressing the mental, physical, and spiritual aspects of their lives.</p>
+										<p>I specialize in working with individual adults. In particular, I have a passion for working with women through their journey in navigating anxiety, depression, ADHD, other mood disorders, motherhood, step-motherhood, blended families, divorce, maternal mental health, pregnancy, postpartum, and infertility. I also specialize in working with elder adults as they navigate life.</p>
+										<p>Kindness, care, and compassion are at the forefront of the work I do with my clients. I believe that people are the best experts on their own lives and experiences, and it is an honor to come alongside them in their journey. I cannot wait to meet you and hear your story.</p>
+										<a href="index.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three — changed from spotlight to straight style3 -->
+							<section id="three" class="wrapper style3">
+								<div class="inner">
+									<h2 class="major">Your Mental Health and Well-Being is Everything</h2>
+									<p><strong>Free consultation:</strong> I offer a free 15-minute consultation to introduce myself, determine if we are the best fit for one another, understand why you are seeking help, and answer any initial questions you have. If I am not the right fit for you, I will send you referrals for other therapists in the area.</p>
+									<p><strong>Sessions:</strong> Each session is tailored to provide in-depth support, lasting between 50 and 55 minutes, provided online via a secured video platform.</p>
+									<p><strong>Fees:</strong> The self-pay rate for individual sessions is $150, ensuring affordability while maintaining the highest quality of care.</p>
+									<a href="mailto:amber@ambermiuracounseling.com?subject=Initial%20Consultation" class="special">Schedule your free consultation</a>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Insurance</h2>
+									<p>I can accept Select Health Colorado, Oxford (Optum), Carelon BH, Oscar (Optum), United Health, Quest BH, Anthem Blue Cross Blue Shield Colorado, Blue Cross Blue Shield of Massachusetts, Aetna, and Cigna.</p>
+									<p>Find healing in connecting with a therapist who deeply understands your unique life experiences.</p>
+									<ul class="actions">
+										<li><a href="mailto:amber@ambermiuracounseling.com?subject=Initial%20Consultation" class="button">Let's Connect — Free 15 Minute Consultation</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Amber Miura Counseling LLC — Parker, CO. Reach out by phone or email to ask questions or schedule your free 15-minute consultation.</p>
+							<ul class="contact">
+								<li class="icon solid fa-phone"><a href="tel:17208770650">(720) 877-0650</a></li>
+								<li class="icon solid fa-envelope"><a href="mailto:amber@ambermiuracounseling.com">amber@ambermiuracounseling.com</a></li>
+							</ul>
+							<p><strong>Crisis resources</strong> — free and confidential support, 24/7. If this is a medical emergency, call 911.</p>
+							<ul class="contact">
+								<li>National Suicide &amp; Crisis Lifeline: <a href="tel:988">988</a></li>
+								<li>Colorado Crisis Line: <a href="tel:18444938255">1-844-493-8255</a></li>
+								<li>Colorado Crisis Text Line: Text "TALK" to 38255</li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2024 Amber Miura Counseling LLC. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<script>
+			window.addEventListener('scroll', function() {
+				var header = document.getElementById('header');
+				if (window.scrollY > 100) {
+					header.classList.add('hide');
+				} else {
+					header.classList.remove('hide');
+				}
+			});
+		</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
